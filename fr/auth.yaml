@@ -1,0 +1,67 @@
+# The account pages and emails of `anetos make:auth` in French. Copied
+# into an app that has them by `anetos lang:add fr`.
+auth:
+  fields:
+    name: "Nom"
+    email: "E-mail"
+    password: "Mot de passe"
+    password_confirmation: "Confirmer le mot de passe"
+    new_password: "Nouveau mot de passe"
+  register:
+    title: "Inscription"
+    submit: "S'inscrire"
+    have_account: "Déjà inscrit ?"
+  login:
+    title: "Connexion"
+    remember: "Se souvenir de moi"
+    submit: "Se connecter"
+  forgot:
+    title: "Mot de passe oublié ?"
+    intro: "Saisissez votre adresse e-mail : nous vous enverrons un lien pour choisir un nouveau mot de passe."
+    submit: "M'envoyer un lien de réinitialisation"
+  reset:
+    title: "Choisir un nouveau mot de passe"
+    submit: "Réinitialiser le mot de passe"
+  dashboard:
+    title: "Tableau de bord"
+    hello: "Bonjour, {name}"
+    verify: "Veuillez vérifier votre adresse e-mail : nous vous avons envoyé un lien."
+    resend: "Renvoyer le lien"
+    logout: "Se déconnecter"
+  tokens:
+    title: "Jetons d'API"
+    new: "Votre nouveau jeton (copiez-le maintenant, il ne sera plus affiché) :"
+    revoke: "Révoquer"
+    name: "Nom"
+    create: "Créer un jeton"
+  social:
+    sign_in_with: "Se connecter avec {provider}"
+  errors:
+    name_required: "Le champ nom est obligatoire."
+    email_taken: "Cette adresse e-mail est déjà utilisée."
+    credentials: "Ces identifiants ne correspondent pas à nos enregistrements."
+    throttled: "Trop de tentatives de connexion. Réessayez dans une minute."
+    link_other_email: "Ce lien concerne une autre adresse e-mail."
+    too_many_emails: "Trop d'e-mails. Réessayez plus tard."
+    reset_invalid: "Ce lien de réinitialisation est invalide ou a expiré. Demandez-en un nouveau."
+    social_no_email: "Votre compte sur ce service n'a pas d'adresse e-mail vérifiée."
+    social_unverified: "Un compte existe déjà avec cette adresse e-mail. Connectez-vous avec votre mot de passe et vérifiez d'abord l'adresse."
+    social_other_account: "Le compte associé à cette adresse e-mail se connecte avec un autre compte sur ce service."
+  status:
+    verified: "Votre adresse e-mail est vérifiée."
+    verification_sent: "Nous vous avons envoyé un nouveau lien de vérification."
+    reset_sent: "Si cette adresse correspond à un compte, nous lui avons envoyé un lien."
+    password_reset: "Votre mot de passe a été réinitialisé. Vous pouvez vous connecter."
+    token_revoked: "Jeton révoqué."
+  mail:
+    hello: "Bonjour {name},"
+    verify:
+      subject: "Vérifiez votre adresse e-mail"
+      intro: "Veuillez confirmer votre adresse e-mail :"
+      button: "Vérifier mon adresse e-mail"
+      ignore: "Si vous n'avez pas créé de compte, ignorez cet e-mail."
+    reset:
+      subject: "Réinitialisez votre mot de passe"
+      intro: "Quelqu'un a demandé à réinitialiser le mot de passe de votre compte. Si c'était vous :"
+      button: "Choisir un nouveau mot de passe"
+      ignore: "Le lien expire bientôt et ne fonctionne qu'une fois. Si vous n'avez rien demandé, ignorez cet e-mail : votre mot de passe reste le même."

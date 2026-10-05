@@ -1,0 +1,148 @@
+# Anetos's own messages in Bangla (validation, error pages, sign-in,
+# formats). Copied into an app by `anetos lang:add bn`; the app's copy is
+# the app's to change.
+
+validation:
+  required: "{label} দিতে হবে।"
+  required_if: "{0} যখন {1}, তখন {label} দিতে হবে।"
+  required_unless: "{0} {1} না হলে {label} দিতে হবে।"
+  required_with: "{list} থাকলে {label} দিতে হবে।"
+  required_without: "{list} না থাকলে {label} দিতে হবে।"
+  accepted: "{label} গ্রহণ করতে হবে।"
+  min:
+    string: "{label} কমপক্ষে {0} অক্ষরের হতে হবে।"
+    numeric: "{label} কমপক্ষে {0} হতে হবে।"
+    array: "{label}-এ কমপক্ষে {0}টি আইটেম থাকতে হবে।"
+  max:
+    string: "{label} {0} অক্ষরের বেশি হতে পারবে না।"
+    numeric: "{label} {0}-এর বেশি হতে পারবে না।"
+    array: "{label}-এ {0}টির বেশি আইটেম থাকতে পারবে না।"
+  size:
+    string: "{label} {0} অক্ষরের হতে হবে।"
+    numeric: "{label} {0} হতে হবে।"
+    array: "{label}-এ {0}টি আইটেম থাকতে হবে।"
+  between:
+    string: "{label} {0} থেকে {1} অক্ষরের মধ্যে হতে হবে।"
+    numeric: "{label} {0} থেকে {1}-এর মধ্যে হতে হবে।"
+    array: "{label}-এ {0} থেকে {1}টি আইটেম থাকতে হবে।"
+  email: "{label} একটি সঠিক ইমেইল ঠিকানা হতে হবে।"
+  url: "{label} একটি সঠিক URL হতে হবে।"
+  uuid: "{label} একটি সঠিক UUID হতে হবে।"
+  alpha: "{label}-এ শুধু অক্ষর থাকতে পারবে।"
+  alpha_num: "{label}-এ শুধু অক্ষর ও সংখ্যা থাকতে পারবে।"
+  alpha_dash: "{label}-এ শুধু অক্ষর, সংখ্যা, ড্যাশ ও আন্ডারস্কোর থাকতে পারবে।"
+  ascii: "{label}-এ শুধু ASCII অক্ষর থাকতে পারবে।"
+  numeric: "{label} একটি সংখ্যা হতে হবে।"
+  integer: "{label} একটি পূর্ণসংখ্যা হতে হবে।"
+  lowercase: "{label} ছোট হাতের অক্ষরে হতে হবে।"
+  uppercase: "{label} বড় হাতের অক্ষরে হতে হবে।"
+  starts_with: "{label} এগুলোর একটি দিয়ে শুরু হতে হবে: {list}।"
+  ends_with: "{label} এগুলোর একটি দিয়ে শেষ হতে হবে: {list}।"
+  ip: "{label} একটি সঠিক IP ঠিকানা হতে হবে।"
+  json: "{label} একটি সঠিক JSON স্ট্রিং হতে হবে।"
+  date: "{label} একটি সঠিক তারিখ (YYYY-MM-DD) হতে হবে।"
+  datetime: "{label} একটি সঠিক তারিখ ও সময় (RFC 3339) হতে হবে।"
+  in: "নির্বাচিত {label} সঠিক নয়।"
+  not_in: "নির্বাচিত {label} সঠিক নয়।"
+  distinct: "{label}-এ একই মান একাধিকবার আছে।"
+  same: "{label} ও {0} মিলতে হবে।"
+  different: "{label} ও {0} আলাদা হতে হবে।"
+  confirmed: "{label} নিশ্চিতকরণের সাথে মিলছে না।"
+  after: "{label} {0}-এর পরের তারিখ হতে হবে।"
+  after_or_equal: "{label} {0} বা তার পরের তারিখ হতে হবে।"
+  before: "{label} {0}-এর আগের তারিখ হতে হবে।"
+  before_or_equal: "{label} {0} বা তার আগের তারিখ হতে হবে।"
+  max_size: "{label} {0}-এর বেশি বড় হতে পারবে না।"
+  min_size: "{label} কমপক্ষে {0} হতে হবে।"
+  mimetypes: "{label} এই ধরনের ফাইল হতে হবে: {list}।"
+  extensions: "{label}-এর এক্সটেনশন এগুলোর একটি হতে হবে: {list}।"
+  image: "{label} একটি ছবি হতে হবে।"
+  custom: "{label} সঠিক নয়।"
+  values:
+    now: "এখন"
+
+http:
+  status:
+    400: "ভুল অনুরোধ"
+    401: "প্রমাণীকরণ প্রয়োজন"
+    403: "নিষিদ্ধ"
+    404: "পাওয়া যায়নি"
+    405: "এই পদ্ধতি অনুমোদিত নয়"
+    406: "গ্রহণযোগ্য নয়"
+    408: "অনুরোধের সময় শেষ"
+    409: "বিরোধ"
+    410: "আর নেই"
+    413: "অনুরোধ খুব বড়"
+    415: "অসমর্থিত মিডিয়া টাইপ"
+    422: "প্রক্রিয়া করা যায়নি"
+    429: "অনেক বেশি অনুরোধ"
+    500: "সার্ভারে সমস্যা হয়েছে"
+    502: "ভুল গেটওয়ে"
+    503: "সেবা এখন পাওয়া যাচ্ছে না"
+    504: "গেটওয়ের সময় শেষ"
+  invalid_data: "দেওয়া তথ্য সঠিক নয়।"
+  invalid_values: "অনুরোধে ভুল মান আছে।"
+  csrf: "পাতাটির মেয়াদ শেষ হয়েছে। পাতাটি আবার লোড করে চেষ্টা করুন।"
+  cross_origin: "অন্য উৎসের অনুরোধ গ্রহণ করা হয়নি।"
+  unsupported_locale: "এই ভাষাটি পাওয়া যায় না।"
+  problems: "সমস্যা"
+  request_id: "অনুরোধ আইডি: {id}"
+
+binding:
+  bool: "true বা false হতে হবে"
+  integer: "একটি পূর্ণসংখ্যা হতে হবে"
+  number: "একটি সংখ্যা হতে হবে"
+  date: "একটি তারিখ (YYYY-MM-DD) হতে হবে"
+  time: "একটি তারিখ ও সময় হতে হবে"
+  duration: "একটি সময়কাল (30s, 5m, 1h) হতে হবে"
+  string: "লেখা হতে হবে"
+  list: "একটি তালিকা হতে হবে"
+  object: "একটি অবজেক্ট হতে হবে"
+  value: "সঠিক মান নয়"
+
+auth:
+  social_failed: "আপনাকে সাইন ইন করানো যায়নি। আবার চেষ্টা করুন।"
+  social_account: "ওই অ্যাকাউন্ট দিয়ে আপনাকে সাইন ইন করানো যায়নি। আবার চেষ্টা করুন।"
+  social_incomplete: "সাইন ইন সম্পূর্ণ হয়নি। আবার চেষ্টা করুন।"
+  social_canceled: "সাইন ইন বাতিল করা হয়েছে।"
+  social_error: "সাইন ইন সেবা একটি সমস্যার কথা জানিয়েছে। আবার চেষ্টা করুন।"
+
+ai:
+  usage_limit: "আপনার AI ব্যবহারের সীমা শেষ হয়েছে। {wait} পরে আবার চেষ্টা করুন।"
+
+format:
+  language: "বাংলা"
+  months: [জানুয়ারী, ফেব্রুয়ারী, মার্চ, এপ্রিল, মে, জুন, জুলাই, আগস্ট, সেপ্টেম্বর, অক্টোবর, নভেম্বর, ডিসেম্বর]
+  months_short: [জানু, ফেব, মার্চ, এপ্রি, মে, জুন, জুল, আগ, সেপ, অক্টো, নভে, ডিসে]
+  days: [রবিবার, সোমবার, মঙ্গলবার, বুধবার, বৃহস্পতিবার, শুক্রবার, শনিবার]
+  days_short: [রবি, সোম, মঙ্গল, বুধ, বৃহস্পতি, শুক্র, শনি]
+  periods: [AM, PM]
+  date:
+    short: "d/M/yy"
+    medium: "d MMM, y"
+    long: "d MMMM, y"
+    full: "EEEE, d MMMM, y"
+  time:
+    short: "h:mm a"
+    medium: "h:mm:ss a"
+    long: "h:mm:ss a z"
+    full: "h:mm:ss a zzzz"
+  datetime:
+    short: "{date}, {time}"
+    medium: "{date}, {time}"
+    long: "{date} এ {time}"
+    full: "{date} এ {time}"
+  currency: "{amount}{symbol}"
+  # Bangla digits (০১২৩), CLDR's default. For Latin digits: numbering: "latn".
+
+relative:
+  now: "এইমাত্র"
+  past: "{time} আগে"
+  future: "{time} পরে"
+  units:
+    second: {one: "{count} সেকেন্ড", other: "{count} সেকেন্ড"}
+    minute: {one: "{count} মিনিট", other: "{count} মিনিট"}
+    hour: {one: "{count} ঘণ্টা", other: "{count} ঘণ্টা"}
+    day: {one: "{count} দিন", other: "{count} দিন"}
+    month: {one: "{count} মাস", other: "{count} মাস"}
+    year: {one: "{count} বছর", other: "{count} বছর"}

@@ -1,0 +1,147 @@
+# Anetos's own messages in French (validation, error pages, sign-in,
+# formats). Copied into an app by `anetos lang:add fr`; the app's copy is
+# the app's to change.
+
+validation:
+  required: "Le champ {label} est obligatoire."
+  required_if: "Le champ {label} est obligatoire quand {0} vaut {1}."
+  required_unless: "Le champ {label} est obligatoire sauf si {0} vaut {1}."
+  required_with: "Le champ {label} est obligatoire quand {list} est présent."
+  required_without: "Le champ {label} est obligatoire quand {list} n'est pas présent."
+  accepted: "Le champ {label} doit être accepté."
+  min:
+    string: "Le champ {label} doit contenir au moins {0} caractères."
+    numeric: "La valeur du champ {label} doit être supérieure ou égale à {0}."
+    array: "Le champ {label} doit contenir au moins {0} éléments."
+  max:
+    string: "Le champ {label} ne peut pas contenir plus de {0} caractères."
+    numeric: "La valeur du champ {label} ne peut pas être supérieure à {0}."
+    array: "Le champ {label} ne peut pas contenir plus de {0} éléments."
+  size:
+    string: "Le champ {label} doit contenir {0} caractères."
+    numeric: "La valeur du champ {label} doit être {0}."
+    array: "Le champ {label} doit contenir {0} éléments."
+  between:
+    string: "Le champ {label} doit contenir entre {0} et {1} caractères."
+    numeric: "La valeur du champ {label} doit être comprise entre {0} et {1}."
+    array: "Le champ {label} doit contenir entre {0} et {1} éléments."
+  email: "Le champ {label} doit être une adresse e-mail valide."
+  url: "Le champ {label} doit être une URL valide."
+  uuid: "Le champ {label} doit être un UUID valide."
+  alpha: "Le champ {label} ne peut contenir que des lettres."
+  alpha_num: "Le champ {label} ne peut contenir que des lettres et des chiffres."
+  alpha_dash: "Le champ {label} ne peut contenir que des lettres, des chiffres, des tirets et des tirets bas."
+  ascii: "Le champ {label} ne peut contenir que des caractères ASCII."
+  numeric: "Le champ {label} doit être un nombre."
+  integer: "Le champ {label} doit être un nombre entier."
+  lowercase: "Le champ {label} doit être en minuscules."
+  uppercase: "Le champ {label} doit être en majuscules."
+  starts_with: "Le champ {label} doit commencer par l'une des valeurs suivantes : {list}."
+  ends_with: "Le champ {label} doit se terminer par l'une des valeurs suivantes : {list}."
+  ip: "Le champ {label} doit être une adresse IP valide."
+  json: "Le champ {label} doit être un document JSON valide."
+  date: "Le champ {label} doit être une date valide (AAAA-MM-JJ)."
+  datetime: "Le champ {label} doit être une date et une heure valides (RFC 3339)."
+  in: "La valeur sélectionnée pour {label} est invalide."
+  not_in: "La valeur sélectionnée pour {label} est invalide."
+  distinct: "Le champ {label} contient une valeur en double."
+  same: "Les champs {label} et {0} doivent être identiques."
+  different: "Les champs {label} et {0} doivent être différents."
+  confirmed: "La confirmation du champ {label} ne correspond pas."
+  after: "Le champ {label} doit être une date postérieure à {0}."
+  after_or_equal: "Le champ {label} doit être une date postérieure ou égale à {0}."
+  before: "Le champ {label} doit être une date antérieure à {0}."
+  before_or_equal: "Le champ {label} doit être une date antérieure ou égale à {0}."
+  max_size: "Le champ {label} ne peut pas dépasser {0}."
+  min_size: "Le champ {label} doit faire au moins {0}."
+  mimetypes: "Le champ {label} doit être un fichier de type : {list}."
+  extensions: "Le champ {label} doit avoir l'une des extensions suivantes : {list}."
+  image: "Le champ {label} doit être une image."
+  custom: "Le champ {label} est invalide."
+  values:
+    now: "maintenant"
+
+http:
+  status:
+    400: "Requête incorrecte"
+    401: "Non authentifié"
+    403: "Accès interdit"
+    404: "Page introuvable"
+    405: "Méthode non autorisée"
+    406: "Non acceptable"
+    408: "Délai d'attente dépassé"
+    409: "Conflit"
+    410: "N'existe plus"
+    413: "Requête trop volumineuse"
+    415: "Type de média non pris en charge"
+    422: "Entité non traitable"
+    429: "Trop de requêtes"
+    500: "Erreur interne du serveur"
+    502: "Passerelle incorrecte"
+    503: "Service indisponible"
+    504: "Délai de la passerelle dépassé"
+  invalid_data: "Les données fournies ne sont pas valides."
+  invalid_values: "La requête contient des valeurs invalides."
+  csrf: "La page a expiré. Rechargez-la et réessayez."
+  cross_origin: "Requête d'une autre origine refusée."
+  unsupported_locale: "Cette langue n'est pas disponible."
+  problems: "Problèmes"
+  request_id: "Identifiant de la requête : {id}"
+
+binding:
+  bool: "doit valoir true ou false"
+  integer: "doit être un nombre entier"
+  number: "doit être un nombre"
+  date: "doit être une date (AAAA-MM-JJ)"
+  time: "doit être une date et une heure"
+  duration: "doit être une durée (30s, 5m, 1h)"
+  string: "doit être du texte"
+  list: "doit être une liste"
+  object: "doit être un objet"
+  value: "n'est pas une valeur valide"
+
+auth:
+  social_failed: "La connexion a échoué. Veuillez réessayer."
+  social_account: "La connexion avec ce compte a échoué. Veuillez réessayer."
+  social_incomplete: "La connexion n'a pas abouti. Veuillez réessayer."
+  social_canceled: "La connexion a été annulée."
+  social_error: "Le service de connexion a signalé une erreur. Veuillez réessayer."
+
+ai:
+  usage_limit: "Vous avez atteint votre limite d'utilisation de l'IA. Réessayez dans {wait}."
+
+format:
+  language: "français"
+  months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
+  months_short: [janv., févr., mars, avr., mai, juin, juil., août, sept., oct., nov., déc.]
+  days: [dimanche, lundi, mardi, mercredi, jeudi, vendredi, samedi]
+  days_short: [dim., lun., mar., mer., jeu., ven., sam.]
+  periods: [AM, PM]
+  date:
+    short: "dd/MM/y"
+    medium: "d MMM y"
+    long: "d MMMM y"
+    full: "EEEE d MMMM y"
+  time:
+    short: "HH:mm"
+    medium: "HH:mm:ss"
+    long: "HH:mm:ss z"
+    full: "HH:mm:ss zzzz"
+  datetime:
+    short: "{date} {time}"
+    medium: "{date}, {time}"
+    long: "{date} à {time}"
+    full: "{date} à {time}"
+  currency: "{amount} {symbol}" # a no-break space
+
+relative:
+  now: "à l'instant"
+  past: "il y a {time}"
+  future: "dans {time}"
+  units:
+    second: {one: "{count} seconde", other: "{count} secondes"}
+    minute: {one: "{count} minute", other: "{count} minutes"}
+    hour: {one: "{count} heure", other: "{count} heures"}
+    day: {one: "{count} jour", other: "{count} jours"}
+    month: {one: "{count} mois", other: "{count} mois"}
+    year: {one: "{count} an", other: "{count} ans"}

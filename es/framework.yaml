@@ -1,0 +1,147 @@
+# Anetos's own messages in Spanish (validation, error pages, sign-in,
+# formats). Copied into an app by `anetos lang:add es`; the app's copy is
+# the app's to change.
+
+validation:
+  required: "El campo {label} es obligatorio."
+  required_if: "El campo {label} es obligatorio cuando {0} es {1}."
+  required_unless: "El campo {label} es obligatorio a menos que {0} sea {1}."
+  required_with: "El campo {label} es obligatorio cuando {list} está presente."
+  required_without: "El campo {label} es obligatorio cuando {list} no está presente."
+  accepted: "El campo {label} debe ser aceptado."
+  min:
+    string: "El campo {label} debe tener al menos {0} caracteres."
+    numeric: "El campo {label} debe ser al menos {0}."
+    array: "El campo {label} debe tener al menos {0} elementos."
+  max:
+    string: "El campo {label} no debe tener más de {0} caracteres."
+    numeric: "El campo {label} no debe ser mayor que {0}."
+    array: "El campo {label} no debe tener más de {0} elementos."
+  size:
+    string: "El campo {label} debe tener {0} caracteres."
+    numeric: "El campo {label} debe ser {0}."
+    array: "El campo {label} debe contener {0} elementos."
+  between:
+    string: "El campo {label} debe tener entre {0} y {1} caracteres."
+    numeric: "El campo {label} debe estar entre {0} y {1}."
+    array: "El campo {label} debe tener entre {0} y {1} elementos."
+  email: "El campo {label} debe ser una dirección de correo electrónico válida."
+  url: "El campo {label} debe ser una URL válida."
+  uuid: "El campo {label} debe ser un UUID válido."
+  alpha: "El campo {label} solo debe contener letras."
+  alpha_num: "El campo {label} solo debe contener letras y números."
+  alpha_dash: "El campo {label} solo debe contener letras, números, guiones y guiones bajos."
+  ascii: "El campo {label} solo debe contener caracteres ASCII."
+  numeric: "El campo {label} debe ser un número."
+  integer: "El campo {label} debe ser un número entero."
+  lowercase: "El campo {label} debe estar en minúsculas."
+  uppercase: "El campo {label} debe estar en mayúsculas."
+  starts_with: "El campo {label} debe comenzar con uno de los siguientes valores: {list}."
+  ends_with: "El campo {label} debe terminar con uno de los siguientes valores: {list}."
+  ip: "El campo {label} debe ser una dirección IP válida."
+  json: "El campo {label} debe ser una cadena JSON válida."
+  date: "El campo {label} debe ser una fecha válida (AAAA-MM-DD)."
+  datetime: "El campo {label} debe ser una fecha y hora válidas (RFC 3339)."
+  in: "El valor seleccionado de {label} no es válido."
+  not_in: "El valor seleccionado de {label} no es válido."
+  distinct: "El campo {label} tiene un valor duplicado."
+  same: "Los campos {label} y {0} deben coincidir."
+  different: "Los campos {label} y {0} deben ser diferentes."
+  confirmed: "La confirmación del campo {label} no coincide."
+  after: "El campo {label} debe ser una fecha posterior a {0}."
+  after_or_equal: "El campo {label} debe ser una fecha posterior o igual a {0}."
+  before: "El campo {label} debe ser una fecha anterior a {0}."
+  before_or_equal: "El campo {label} debe ser una fecha anterior o igual a {0}."
+  max_size: "El campo {label} no debe superar {0}."
+  min_size: "El campo {label} debe ser de al menos {0}."
+  mimetypes: "El campo {label} debe ser un archivo de tipo: {list}."
+  extensions: "El campo {label} debe tener una de las siguientes extensiones: {list}."
+  image: "El campo {label} debe ser una imagen."
+  custom: "El campo {label} no es válido."
+  values:
+    now: "ahora"
+
+http:
+  status:
+    400: "Solicitud incorrecta"
+    401: "No autenticado"
+    403: "Prohibido"
+    404: "No encontrado"
+    405: "Método no permitido"
+    406: "No aceptable"
+    408: "Tiempo de espera agotado"
+    409: "Conflicto"
+    410: "Ya no existe"
+    413: "Solicitud demasiado grande"
+    415: "Tipo de contenido no admitido"
+    422: "Entidad no procesable"
+    429: "Demasiadas solicitudes"
+    500: "Error interno del servidor"
+    502: "Puerta de enlace incorrecta"
+    503: "Servicio no disponible"
+    504: "Tiempo de espera de la puerta de enlace agotado"
+  invalid_data: "Los datos proporcionados no son válidos."
+  invalid_values: "La solicitud tiene valores no válidos."
+  csrf: "La página ha caducado. Recárguela y vuelva a intentarlo."
+  cross_origin: "Solicitud de otro origen rechazada."
+  unsupported_locale: "Ese idioma no está disponible."
+  problems: "Problemas"
+  request_id: "ID de la solicitud: {id}"
+
+binding:
+  bool: "debe ser true o false"
+  integer: "debe ser un número entero"
+  number: "debe ser un número"
+  date: "debe ser una fecha (AAAA-MM-DD)"
+  time: "debe ser una fecha y hora"
+  duration: "debe ser una duración (30s, 5m, 1h)"
+  string: "debe ser texto"
+  list: "debe ser una lista"
+  object: "debe ser un objeto"
+  value: "no es un valor válido"
+
+auth:
+  social_failed: "No pudimos iniciar tu sesión. Inténtalo de nuevo."
+  social_account: "No pudimos iniciar tu sesión con esa cuenta. Inténtalo de nuevo."
+  social_incomplete: "El inicio de sesión no se completó. Inténtalo de nuevo."
+  social_canceled: "Se canceló el inicio de sesión."
+  social_error: "El servicio de inicio de sesión informó de un error. Inténtalo de nuevo."
+
+ai:
+  usage_limit: "Has alcanzado tu límite de uso de IA. Inténtalo de nuevo en {wait}."
+
+format:
+  language: "español"
+  months: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
+  months_short: [ene, feb, mar, abr, may, jun, jul, ago, sept, oct, nov, dic]
+  days: [domingo, lunes, martes, miércoles, jueves, viernes, sábado]
+  days_short: [dom, lun, mar, mié, jue, vie, sáb]
+  periods: ["a. m.", "p. m."]
+  date:
+    short: "d/M/yy"
+    medium: "d MMM y"
+    long: "d 'de' MMMM 'de' y"
+    full: "EEEE, d 'de' MMMM 'de' y"
+  time:
+    short: "H:mm"
+    medium: "H:mm:ss"
+    long: "H:mm:ss z"
+    full: "H:mm:ss (zzzz)"
+  datetime:
+    short: "{date}, {time}"
+    medium: "{date}, {time}"
+    long: "{date}, {time}"
+    full: "{date}, {time}"
+  currency: "{amount} {symbol}" # a no-break space
+
+relative:
+  now: "ahora mismo"
+  past: "hace {time}"
+  future: "dentro de {time}"
+  units:
+    second: {one: "{count} segundo", other: "{count} segundos"}
+    minute: {one: "{count} minuto", other: "{count} minutos"}
+    hour: {one: "{count} hora", other: "{count} horas"}
+    day: {one: "{count} día", other: "{count} días"}
+    month: {one: "{count} mes", other: "{count} meses"}
+    year: {one: "{count} año", other: "{count} años"}

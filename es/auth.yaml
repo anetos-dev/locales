@@ -1,0 +1,67 @@
+# The account pages and emails of `anetos make:auth` in Spanish. Copied
+# into an app that has them by `anetos lang:add es`.
+auth:
+  fields:
+    name: "Nombre"
+    email: "Correo electrónico"
+    password: "Contraseña"
+    password_confirmation: "Confirmar contraseña"
+    new_password: "Nueva contraseña"
+  register:
+    title: "Registro"
+    submit: "Registrarse"
+    have_account: "¿Ya estás registrado?"
+  login:
+    title: "Iniciar sesión"
+    remember: "Recordarme"
+    submit: "Iniciar sesión"
+  forgot:
+    title: "¿Olvidaste tu contraseña?"
+    intro: "Escribe tu correo electrónico: te enviaremos un enlace para elegir una nueva contraseña."
+    submit: "Enviarme un enlace"
+  reset:
+    title: "Elige una nueva contraseña"
+    submit: "Restablecer contraseña"
+  dashboard:
+    title: "Panel"
+    hello: "Hola, {name}"
+    verify: "Verifica tu correo electrónico: te hemos enviado un enlace."
+    resend: "Enviar el enlace de nuevo"
+    logout: "Cerrar sesión"
+  tokens:
+    title: "Tokens de API"
+    new: "Tu nuevo token (cópialo ahora, no se volverá a mostrar):"
+    revoke: "Revocar"
+    name: "Nombre"
+    create: "Crear token"
+  social:
+    sign_in_with: "Iniciar sesión con {provider}"
+  errors:
+    name_required: "El campo nombre es obligatorio."
+    email_taken: "Este correo electrónico ya está en uso."
+    credentials: "Estas credenciales no coinciden con nuestros registros."
+    throttled: "Demasiados intentos de inicio de sesión. Inténtalo de nuevo en un minuto."
+    link_other_email: "Este enlace es para otro correo electrónico."
+    too_many_emails: "Demasiados correos. Inténtalo de nuevo más tarde."
+    reset_invalid: "Este enlace no es válido o ha caducado. Pide uno nuevo."
+    social_no_email: "Tu cuenta en ese servicio no tiene un correo electrónico verificado."
+    social_unverified: "Ya existe una cuenta con este correo electrónico. Inicia sesión con tu contraseña y verifica primero la dirección."
+    social_other_account: "La cuenta con este correo electrónico inicia sesión con otra cuenta de ese servicio."
+  status:
+    verified: "Tu correo electrónico está verificado."
+    verification_sent: "Te hemos enviado un nuevo enlace de verificación."
+    reset_sent: "Si esa dirección tiene una cuenta, le hemos enviado un enlace."
+    password_reset: "Tu contraseña se ha restablecido. Ya puedes iniciar sesión."
+    token_revoked: "Token revocado."
+  mail:
+    hello: "Hola, {name}:"
+    verify:
+      subject: "Verifica tu correo electrónico"
+      intro: "Confirma tu dirección de correo electrónico:"
+      button: "Verificar mi correo electrónico"
+      ignore: "Si no creaste una cuenta, ignora este mensaje."
+    reset:
+      subject: "Restablece tu contraseña"
+      intro: "Alguien pidió restablecer la contraseña de tu cuenta. Si fuiste tú:"
+      button: "Elegir una nueva contraseña"
+      ignore: "El enlace caduca pronto y solo funciona una vez. Si no lo pediste, ignora este mensaje: tu contraseña no cambia."
