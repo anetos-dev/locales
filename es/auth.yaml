@@ -7,6 +7,7 @@ auth:
     password: "Contraseña"
     password_confirmation: "Confirmar contraseña"
     new_password: "Nueva contraseña"
+    code: "Código"
   register:
     title: "Registro"
     submit: "Registrarse"
@@ -28,6 +29,25 @@ auth:
     verify: "Verifica tu correo electrónico: te hemos enviado un enlace."
     resend: "Enviar el enlace de nuevo"
     logout: "Cerrar sesión"
+  challenge:
+    title: "Inicio de sesión en dos pasos"
+    intro: "Introduce el código que muestra tu aplicación de autenticación, o uno de tus códigos de recuperación."
+    submit: "Iniciar sesión"
+  confirm:
+    title: "Confirma tu contraseña"
+    intro: "Esta sección es delicada: vuelve a escribir tu contraseña."
+    submit: "Confirmar"
+  two_factor:
+    title: "Inicio de sesión en dos pasos"
+    off: "El inicio de sesión en dos pasos está desactivado: basta con tu contraseña para entrar. Actívalo para pedir también un código de una aplicación de autenticación."
+    enable: "Activar"
+    scan: "Escanea este código QR con tu aplicación de autenticación y escribe el código que muestra."
+    key: "O escribe esta clave:"
+    confirm: "Activar"
+    on: {one: "El inicio de sesión en dos pasos está activado. Queda {count} código de recuperación.", other: "El inicio de sesión en dos pasos está activado. Quedan {count} códigos de recuperación."}
+    codes: "Tus códigos de recuperación (guárdalos en un lugar seguro: cada uno sirve para entrar una vez sin la aplicación; no se volverán a mostrar):"
+    new_codes: "Nuevos códigos de recuperación"
+    disable: "Desactivar"
   tokens:
     title: "Tokens de API"
     new: "Tu nuevo token (cópialo ahora, no se volverá a mostrar):"
@@ -48,12 +68,17 @@ auth:
     social_no_email: "Tu cuenta en ese servicio no tiene un correo electrónico verificado."
     social_unverified: "Ya existe una cuenta con este correo electrónico. Inicia sesión con tu contraseña y verifica primero la dirección."
     social_other_account: "La cuenta con este correo electrónico inicia sesión con otra cuenta de ese servicio."
+    code: "Ese código no es correcto."
+    password: "Esa no es tu contraseña."
+    sign_in_again: "Vuelve a iniciar sesión."
   status:
     verified: "Tu correo electrónico está verificado."
     verification_sent: "Te hemos enviado un nuevo enlace de verificación."
     reset_sent: "Si esa dirección tiene una cuenta, le hemos enviado un enlace."
     password_reset: "Tu contraseña se ha restablecido. Ya puedes iniciar sesión."
     token_revoked: "Token revocado."
+    two_factor_on: "El inicio de sesión en dos pasos está activado."
+    two_factor_off: "El inicio de sesión en dos pasos está desactivado."
   mail:
     hello: "Hola, {name}:"
     verify:

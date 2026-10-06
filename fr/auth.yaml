@@ -7,6 +7,7 @@ auth:
     password: "Mot de passe"
     password_confirmation: "Confirmer le mot de passe"
     new_password: "Nouveau mot de passe"
+    code: "Code"
   register:
     title: "Inscription"
     submit: "S'inscrire"
@@ -28,6 +29,25 @@ auth:
     verify: "Veuillez vérifier votre adresse e-mail : nous vous avons envoyé un lien."
     resend: "Renvoyer le lien"
     logout: "Se déconnecter"
+  challenge:
+    title: "Connexion en deux étapes"
+    intro: "Saisissez le code affiché par votre application d'authentification, ou l'un de vos codes de récupération."
+    submit: "Se connecter"
+  confirm:
+    title: "Confirmez votre mot de passe"
+    intro: "Cette section est sensible : veuillez saisir à nouveau votre mot de passe."
+    submit: "Confirmer"
+  two_factor:
+    title: "Connexion en deux étapes"
+    off: "La connexion en deux étapes est désactivée : votre mot de passe suffit pour vous connecter. Activez-la pour demander aussi un code d'une application d'authentification."
+    enable: "Activer"
+    scan: "Scannez ce QR code avec votre application d'authentification, puis saisissez le code qu'elle affiche."
+    key: "Ou saisissez cette clé :"
+    confirm: "Activer"
+    on: {one: "La connexion en deux étapes est activée. Il reste {count} code de récupération.", other: "La connexion en deux étapes est activée. Il reste {count} codes de récupération."}
+    codes: "Vos codes de récupération (gardez-les en lieu sûr : chacun permet de se connecter une fois sans l'application ; ils ne seront plus affichés) :"
+    new_codes: "Nouveaux codes de récupération"
+    disable: "Désactiver"
   tokens:
     title: "Jetons d'API"
     new: "Votre nouveau jeton (copiez-le maintenant, il ne sera plus affiché) :"
@@ -48,12 +68,17 @@ auth:
     social_no_email: "Votre compte sur ce service n'a pas d'adresse e-mail vérifiée."
     social_unverified: "Un compte existe déjà avec cette adresse e-mail. Connectez-vous avec votre mot de passe et vérifiez d'abord l'adresse."
     social_other_account: "Le compte associé à cette adresse e-mail se connecte avec un autre compte sur ce service."
+    code: "Ce code n'est pas correct."
+    password: "Ce n'est pas votre mot de passe."
+    sign_in_again: "Veuillez vous reconnecter."
   status:
     verified: "Votre adresse e-mail est vérifiée."
     verification_sent: "Nous vous avons envoyé un nouveau lien de vérification."
     reset_sent: "Si cette adresse correspond à un compte, nous lui avons envoyé un lien."
     password_reset: "Votre mot de passe a été réinitialisé. Vous pouvez vous connecter."
     token_revoked: "Jeton révoqué."
+    two_factor_on: "La connexion en deux étapes est activée."
+    two_factor_off: "La connexion en deux étapes est désactivée."
   mail:
     hello: "Bonjour {name},"
     verify:
