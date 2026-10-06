@@ -52,6 +52,10 @@ auth:
     delete: "Eliminar tu cuenta"
     delete_intro: "Tu cuenta y sus tokens de API se eliminan para siempre, y se cierra tu sesión. No se puede deshacer."
     delete_button: "Eliminar mi cuenta"
+  revert:
+    title: "Deshacer el cambio de correo electrónico"
+    intro: "El correo electrónico de tu cuenta iba a cambiar de {old} a {new}. Si no fuiste tú, alguien tiene tu contraseña: deshaz el cambio. La dirección vuelve a ser {old}, tu contraseña se borra, el inicio de sesión en dos pasos se desactiva, tus tokens de API y enlaces a otras cuentas se eliminan y se cierra la sesión de todos; después te enviamos un enlace para elegir una contraseña nueva."
+    submit: "Deshacer el cambio y proteger mi cuenta"
   challenge:
     title: "Inicio de sesión en dos pasos"
     intro: "Introduce el código que muestra tu aplicación de autenticación, o uno de tus códigos de recuperación."
@@ -98,6 +102,8 @@ auth:
     sign_in_first: "Cierra sesión y vuelve a entrar, y define tu contraseña en los minutos siguientes."
     password_too_long: "Esa contraseña es demasiado larga."
     choice: "Elige una opción de la lista."
+    revert_invalid: "Este enlace no deshace ningún cambio de correo electrónico."
+    revert_taken: "Tu dirección anterior tiene ahora otra cuenta: contacta con nosotros."
   status:
     verified: "Tu correo electrónico está verificado."
     verification_sent: "Te hemos enviado un nuevo enlace de verificación."
@@ -111,6 +117,7 @@ auth:
     email_changed: "Tu correo electrónico ahora es {email}."
     password_changed: "Contraseña cambiada. Se ha cerrado tu sesión en tus otros navegadores y dispositivos."
     account_deleted: "Tu cuenta se ha eliminado."
+    email_reverted: "Tu correo electrónico vuelve a ser {email}. Le hemos enviado un enlace para elegir una contraseña nueva."
   mail:
     hello: "Hola, {name}:"
     change_email:
@@ -121,7 +128,8 @@ auth:
     email_changing:
       subject: "Tu correo electrónico va a cambiar"
       intro: "Alguien con la sesión iniciada en tu cuenta ha pedido cambiar su correo electrónico a {email}. Cambiará cuando esa dirección lo confirme."
-      not_you: "Si no fuiste tú, alguien puede tener tu contraseña: inicia sesión, cambia tu contraseña y cancela el cambio en tus ajustes si aún está pendiente."
+      not_you: "Si no fuiste tú, alguien tiene tu contraseña. Deshaz el cambio: este enlace devuelve tu dirección, cierra la sesión de todos y te permite elegir una contraseña nueva, incluso si el cambio ya está hecho."
+      button: "No fui yo: deshacer el cambio"
     verify:
       subject: "Verifica tu correo electrónico"
       intro: "Confirma tu dirección de correo electrónico:"

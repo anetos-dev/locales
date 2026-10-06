@@ -52,6 +52,10 @@ auth:
     delete: "Supprimer votre compte"
     delete_intro: "Votre compte et ses jetons d'API sont supprimés définitivement, et vous êtes déconnecté. C'est irréversible."
     delete_button: "Supprimer mon compte"
+  revert:
+    title: "Annuler le changement d'adresse e-mail"
+    intro: "L'adresse e-mail de votre compte devait passer de {old} à {new}. Si ce n'était pas vous, quelqu'un a votre mot de passe : annulez le changement. L'adresse redevient {old}, votre mot de passe est effacé, la connexion en deux étapes désactivée, vos jetons d'API et liens vers d'autres comptes supprimés, et tout le monde est déconnecté ; nous vous envoyons ensuite un lien pour choisir un nouveau mot de passe."
+    submit: "Annuler le changement et sécuriser mon compte"
   challenge:
     title: "Connexion en deux étapes"
     intro: "Saisissez le code affiché par votre application d'authentification, ou l'un de vos codes de récupération."
@@ -98,6 +102,8 @@ auth:
     sign_in_first: "Déconnectez-vous et reconnectez-vous, puis définissez votre mot de passe dans les minutes qui suivent."
     password_too_long: "Ce mot de passe est trop long."
     choice: "Choisissez une valeur de la liste."
+    revert_invalid: "Ce lien ne permet d'annuler aucun changement d'adresse e-mail."
+    revert_taken: "Votre ancienne adresse a maintenant un autre compte : contactez-nous."
   status:
     verified: "Votre adresse e-mail est vérifiée."
     verification_sent: "Nous vous avons envoyé un nouveau lien de vérification."
@@ -111,6 +117,7 @@ auth:
     email_changed: "Votre adresse e-mail est désormais {email}."
     password_changed: "Mot de passe changé. Vous êtes déconnecté de vos autres navigateurs et appareils."
     account_deleted: "Votre compte est supprimé."
+    email_reverted: "Votre adresse e-mail est de nouveau {email}. Nous lui avons envoyé un lien pour choisir un nouveau mot de passe."
   mail:
     hello: "Bonjour {name},"
     change_email:
@@ -121,7 +128,8 @@ auth:
     email_changing:
       subject: "Votre adresse e-mail va changer"
       intro: "Une personne connectée à votre compte a demandé à changer son adresse e-mail en {email}. Elle changera une fois cette adresse confirmée."
-      not_you: "Si ce n'était pas vous, quelqu'un a peut-être votre mot de passe : connectez-vous, changez votre mot de passe et annulez le changement dans vos paramètres s'il est encore en attente."
+      not_you: "Si ce n'était pas vous, quelqu'un a votre mot de passe. Annulez le changement : ce lien remet votre adresse, déconnecte tout le monde et vous permet de choisir un nouveau mot de passe, même une fois le changement fait."
+      button: "Ce n'était pas moi : annuler le changement"
     verify:
       subject: "Vérifiez votre adresse e-mail"
       intro: "Veuillez confirmer votre adresse e-mail :"
