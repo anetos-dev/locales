@@ -40,6 +40,7 @@ auth:
     name_required: "El campo nombre es obligatorio."
     email_taken: "Este correo electrónico ya está en uso."
     credentials: "Estas credenciales no coinciden con nuestros registros."
+    disabled: "Esta cuenta está desactivada."
     throttled: "Demasiados intentos de inicio de sesión. Inténtalo de nuevo en un minuto."
     link_other_email: "Este enlace es para otro correo electrónico."
     too_many_emails: "Demasiados correos. Inténtalo de nuevo más tarde."
