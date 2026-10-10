@@ -3,7 +3,7 @@
 // Package locales holds translations of Anetos's own messages, a folder
 // per locale (bn, es, fr), for apps to copy:
 //
-//	go tool anetos lang:add fr
+//	go tool anetos locale:add fr
 //
 // Each folder has framework.yaml (validation messages, error pages,
 // login messages, date and number formats) and auth.yaml (the pages

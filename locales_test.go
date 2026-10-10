@@ -57,7 +57,7 @@ func TestLocales(t *testing.T) {
 			var report bytes.Buffer
 			n := tr.Check(&report, nil)
 			if n > 0 || strings.Contains(report.String(), "note:") {
-				t.Errorf("lang:check:\n%s", report.String())
+				t.Errorf("locale:check:\n%s", report.String())
 			}
 		})
 	}

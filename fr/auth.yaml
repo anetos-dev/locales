@@ -1,5 +1,5 @@
 # The account pages and emails of `anetos make:auth` in French. Copied
-# into an app that has them by `anetos lang:add fr`.
+# into an app that has them by `anetos locale:add fr`.
 auth:
   fields:
     name: "Nom"

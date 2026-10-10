@@ -22,14 +22,14 @@ pages and emails `anetos make:auth` writes. One folder per locale:
 In an Anetos app:
 
 ```sh
-go tool anetos lang:add fr
-go run . lang:check
+go tool anetos locale:add fr
+go run . locale:check
 ```
 
-`lang:add` copies `fr/framework.yaml`, and `fr/auth.yaml` if the app has
-`make:auth`'s pages, into the app's `locales/fr/`. From then on the files
-are the app's: change any message there. `lang:add fr` again (with
-`-force`) replaces them with this repository's latest.
+`locale:add` copies `fr/framework.yaml`, and `fr/auth.yaml` if the app
+has `make:auth`'s pages, into the app's `locales/fr/`. From then on the
+files are the app's: change any message there. `locale:add fr` again
+(with `--force`) replaces them with this repository's latest.
 
 Your app's own text (its pages and emails) is yours to translate: add the
 same keys as in `locales/en/` to `locales/fr/`.
@@ -67,6 +67,9 @@ the language uses; date patterns and names follow the language's
    of the wrong length.
 3. Open a pull request. Say whether you are a native speaker; we merge a
    new language after a native speaker has reviewed it.
+
+Everyone taking part follows the
+[code of conduct](https://github.com/anetos-dev/.github/blob/main/CODE_OF_CONDUCT.md).
 
 Until the framework's modules are published (v0.5), the check needs a
 checkout of [anetos-dev/anetos](https://github.com/anetos-dev/anetos)

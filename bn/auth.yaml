@@ -1,5 +1,5 @@
 # The account pages and emails of `anetos make:auth` in Bangla. Copied
-# into an app that has them by `anetos lang:add bn`.
+# into an app that has them by `anetos locale:add bn`.
 auth:
   fields:
     name: "নাম"

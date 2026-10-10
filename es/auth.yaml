@@ -1,5 +1,5 @@
 # The account pages and emails of `anetos make:auth` in Spanish. Copied
-# into an app that has them by `anetos lang:add es`.
+# into an app that has them by `anetos locale:add es`.
 auth:
   fields:
     name: "Nombre"

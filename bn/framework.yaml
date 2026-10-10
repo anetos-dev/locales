@@ -1,5 +1,5 @@
 # Anetos's own messages in Bangla (validation, error pages, login,
-# formats). Copied into an app by `anetos lang:add bn`; the app's copy is
+# formats). Copied into an app by `anetos locale:add bn`; the app's copy is
 # the app's to change.
 
 validation:
