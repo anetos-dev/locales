@@ -13,8 +13,8 @@ require (
 	golang.org/x/tools v0.50.0 // indirect
 )
 
-// Until the framework's v0.3.0 is tagged: a checkout of anetos-dev/anetos
-// next to this one.
+// Until the framework's modules are published (v0.5): a checkout of
+// anetos-dev/anetos next to this one.
 replace (
 	anetos.dev/anetos => ../anetos
 	anetos.dev/anetos/cli => ../anetos/cli

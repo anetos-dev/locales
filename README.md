@@ -68,9 +68,9 @@ the language uses; date patterns and names follow the language's
 3. Open a pull request. Say whether you are a native speaker; we merge a
    new language after a native speaker has reviewed it.
 
-Until Anetos v0.3.0 is tagged, the check needs a checkout of
-[anetos-dev/anetos](https://github.com/anetos-dev/anetos) next to this
-one (`../anetos`, see `go.mod`).
+Until the framework's modules are published (v0.5), the check needs a
+checkout of [anetos-dev/anetos](https://github.com/anetos-dev/anetos)
+next to this one (`../anetos`, see `go.mod`).
 
 ## License
 
