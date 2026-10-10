@@ -6,7 +6,7 @@
 //	go tool anetos lang:add fr
 //
 // Each folder has framework.yaml (validation messages, error pages,
-// sign-in messages, date and number formats) and auth.yaml (the pages
+// login messages, date and number formats) and auth.yaml (the pages
 // and emails of anetos make:auth). Once copied into an app's locales
 // folder, they are the app's to change.
 package locales

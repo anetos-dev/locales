@@ -17,6 +17,7 @@ auth:
     title: "Iniciar sesión"
     remember: "Recordarme"
     submit: "Iniciar sesión"
+    no_account: "¿Aún no tienes cuenta?"
   forgot:
     title: "¿Olvidaste tu contraseña?"
     intro: "Escribe tu correo electrónico: te enviaremos un enlace para elegir una nueva contraseña."
@@ -54,10 +55,10 @@ auth:
     delete_button: "Eliminar mi cuenta"
   revert:
     title: "Deshacer el cambio de correo electrónico"
-    intro: "El correo electrónico de tu cuenta iba a cambiar de {old} a {new}. Si no fuiste tú, alguien tiene tu contraseña: deshaz el cambio. La dirección vuelve a ser {old}, tu contraseña se borra, el inicio de sesión en dos pasos se desactiva, tus tokens de API y enlaces a otras cuentas se eliminan y se cierra la sesión de todos; después te enviamos un enlace para elegir una contraseña nueva."
+    intro: "El correo electrónico de tu cuenta iba a cambiar de {old} a {new}. Si no fuiste tú, alguien tiene tu contraseña: deshaz el cambio. La dirección vuelve a ser {old}, tu contraseña se borra, la autenticación en dos pasos se desactiva, tus tokens de API y enlaces a otras cuentas se eliminan y se cierra la sesión de todos; después te enviamos un enlace para elegir una contraseña nueva."
     submit: "Deshacer el cambio y proteger mi cuenta"
   challenge:
-    title: "Inicio de sesión en dos pasos"
+    title: "Autenticación en dos pasos"
     intro: "Introduce el código que muestra tu aplicación de autenticación, o uno de tus códigos de recuperación."
     submit: "Iniciar sesión"
   confirm:
@@ -65,24 +66,26 @@ auth:
     intro: "Esta sección es delicada: vuelve a escribir tu contraseña."
     submit: "Confirmar"
   two_factor:
-    title: "Inicio de sesión en dos pasos"
-    off: "El inicio de sesión en dos pasos está desactivado: basta con tu contraseña para entrar. Actívalo para pedir también un código de una aplicación de autenticación."
+    title: "Autenticación en dos pasos"
+    off: "La autenticación en dos pasos está desactivada: basta con tu contraseña para entrar. Actívala para pedir también un código de una aplicación de autenticación."
     enable: "Activar"
     scan: "Escanea este código QR con tu aplicación de autenticación y escribe el código que muestra."
     key: "O escribe esta clave:"
     confirm: "Activar"
-    on: {one: "El inicio de sesión en dos pasos está activado. Queda {count} código de recuperación.", other: "El inicio de sesión en dos pasos está activado. Quedan {count} códigos de recuperación."}
+    on: {one: "La autenticación en dos pasos está activada. Queda {count} código de recuperación.", other: "La autenticación en dos pasos está activada. Quedan {count} códigos de recuperación."}
     codes: "Tus códigos de recuperación (guárdalos en un lugar seguro: cada uno sirve para entrar una vez sin la aplicación; no se volverán a mostrar):"
     new_codes: "Nuevos códigos de recuperación"
     disable: "Desactivar"
   tokens:
     title: "Tokens de API"
+    intro: "Los programas que usan la API envían un token en la cabecera Authorization de sus solicitudes: Bearer y, a continuación, el token."
     new: "Tu nuevo token (cópialo ahora, no se volverá a mostrar):"
     revoke: "Revocar"
     name: "Nombre"
     create: "Crear token"
   social:
-    sign_in_with: "Iniciar sesión con {provider}"
+    or: "O"
+    login_with: "Iniciar sesión con {provider}"
   errors:
     name_required: "El campo nombre es obligatorio."
     email_taken: "Este correo electrónico ya está en uso."
@@ -97,9 +100,9 @@ auth:
     social_other_account: "La cuenta con este correo electrónico inicia sesión con otra cuenta de ese servicio."
     code: "Ese código no es correcto."
     password: "Esa no es tu contraseña."
-    sign_in_again: "Vuelve a iniciar sesión."
+    login_again: "Vuelve a iniciar sesión."
     email_same: "Esa ya es tu dirección."
-    sign_in_first: "Cierra sesión y vuelve a entrar, y define tu contraseña en los minutos siguientes."
+    login_first: "Cierra sesión y vuelve a entrar, y define tu contraseña en los minutos siguientes."
     password_too_long: "Esa contraseña es demasiado larga."
     choice: "Elige una opción de la lista."
     revert_invalid: "Este enlace no deshace ningún cambio de correo electrónico."
@@ -110,8 +113,8 @@ auth:
     reset_sent: "Si esa dirección tiene una cuenta, le hemos enviado un enlace."
     password_reset: "Tu contraseña se ha restablecido. Ya puedes iniciar sesión."
     token_revoked: "Token revocado."
-    two_factor_on: "El inicio de sesión en dos pasos está activado."
-    two_factor_off: "El inicio de sesión en dos pasos está desactivado."
+    two_factor_on: "La autenticación en dos pasos está activada."
+    two_factor_off: "La autenticación en dos pasos está desactivada."
     saved: "Guardado."
     email_change_sent: "Hemos enviado un enlace a {email}. Tu dirección cambiará cuando lo sigas."
     email_changed: "Tu correo electrónico ahora es {email}."

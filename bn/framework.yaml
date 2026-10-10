@@ -1,4 +1,4 @@
-# Anetos's own messages in Bangla (validation, error pages, sign-in,
+# Anetos's own messages in Bangla (validation, error pages, login,
 # formats). Copied into an app by `anetos lang:add bn`; the app's copy is
 # the app's to change.
 
@@ -101,11 +101,11 @@ binding:
   value: "সঠিক মান নয়"
 
 auth:
-  social_failed: "আপনাকে সাইন ইন করানো যায়নি। আবার চেষ্টা করুন।"
-  social_account: "ওই অ্যাকাউন্ট দিয়ে আপনাকে সাইন ইন করানো যায়নি। আবার চেষ্টা করুন।"
-  social_incomplete: "সাইন ইন সম্পূর্ণ হয়নি। আবার চেষ্টা করুন।"
-  social_canceled: "সাইন ইন বাতিল করা হয়েছে।"
-  social_error: "সাইন ইন সেবা একটি সমস্যার কথা জানিয়েছে। আবার চেষ্টা করুন।"
+  social_failed: "আপনাকে লগ ইন করানো যায়নি। আবার চেষ্টা করুন।"
+  social_account: "ওই অ্যাকাউন্ট দিয়ে আপনাকে লগ ইন করানো যায়নি। আবার চেষ্টা করুন।"
+  social_incomplete: "লগ ইন সম্পূর্ণ হয়নি। আবার চেষ্টা করুন।"
+  social_canceled: "লগ ইন বাতিল করা হয়েছে।"
+  social_error: "লগ ইন সেবা একটি সমস্যার কথা জানিয়েছে। আবার চেষ্টা করুন।"
 
 ai:
   usage_limit: "আপনার AI ব্যবহারের সীমা শেষ হয়েছে। {wait} পরে আবার চেষ্টা করুন।"

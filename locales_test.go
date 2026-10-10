@@ -50,7 +50,7 @@ func TestLocales(t *testing.T) {
 				}
 				fsys[locale+"/"+name] = &fstest.MapFile{Data: data}
 			}
-			tr, err := i18n.New(i18n.Config{Locale: "en", Fallback: "en", URL: "none", Locales: []string{"en", locale}}, i18n.WithLocales(fsys))
+			tr, err := i18n.NewTranslator(i18n.Config{Locale: "en", Fallback: "en", Strategy: "none", Locales: []string{"en", locale}}, i18n.WithLocales(fsys))
 			if err != nil {
 				t.Fatal(err)
 			}

@@ -8,7 +8,7 @@
 # Anetos locales
 
 Translations of [Anetos](https://anetos.dev)'s own messages: validation
-messages, error pages, sign-in messages, date and number formats, and the
+messages, error pages, login messages, date and number formats, and the
 pages and emails `anetos make:auth` writes. One folder per locale:
 
 | Locale | Language | Status |

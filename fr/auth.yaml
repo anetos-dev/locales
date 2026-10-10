@@ -17,6 +17,7 @@ auth:
     title: "Connexion"
     remember: "Se souvenir de moi"
     submit: "Se connecter"
+    no_account: "Pas encore de compte ?"
   forgot:
     title: "Mot de passe oublié ?"
     intro: "Saisissez votre adresse e-mail : nous vous enverrons un lien pour choisir un nouveau mot de passe."
@@ -54,10 +55,10 @@ auth:
     delete_button: "Supprimer mon compte"
   revert:
     title: "Annuler le changement d'adresse e-mail"
-    intro: "L'adresse e-mail de votre compte devait passer de {old} à {new}. Si ce n'était pas vous, quelqu'un a votre mot de passe : annulez le changement. L'adresse redevient {old}, votre mot de passe est effacé, la connexion en deux étapes désactivée, vos jetons d'API et liens vers d'autres comptes supprimés, et tout le monde est déconnecté ; nous vous envoyons ensuite un lien pour choisir un nouveau mot de passe."
+    intro: "L'adresse e-mail de votre compte devait passer de {old} à {new}. Si ce n'était pas vous, quelqu'un a votre mot de passe : annulez le changement. L'adresse redevient {old}, votre mot de passe est effacé, la double authentification désactivée, vos jetons d'API et liens vers d'autres comptes supprimés, et tout le monde est déconnecté ; nous vous envoyons ensuite un lien pour choisir un nouveau mot de passe."
     submit: "Annuler le changement et sécuriser mon compte"
   challenge:
-    title: "Connexion en deux étapes"
+    title: "Double authentification"
     intro: "Saisissez le code affiché par votre application d'authentification, ou l'un de vos codes de récupération."
     submit: "Se connecter"
   confirm:
@@ -65,24 +66,26 @@ auth:
     intro: "Cette section est sensible : veuillez saisir à nouveau votre mot de passe."
     submit: "Confirmer"
   two_factor:
-    title: "Connexion en deux étapes"
-    off: "La connexion en deux étapes est désactivée : votre mot de passe suffit pour vous connecter. Activez-la pour demander aussi un code d'une application d'authentification."
+    title: "Double authentification"
+    off: "La double authentification est désactivée : votre mot de passe suffit pour vous connecter. Activez-la pour demander aussi un code d'une application d'authentification."
     enable: "Activer"
     scan: "Scannez ce QR code avec votre application d'authentification, puis saisissez le code qu'elle affiche."
     key: "Ou saisissez cette clé :"
     confirm: "Activer"
-    on: {one: "La connexion en deux étapes est activée. Il reste {count} code de récupération.", other: "La connexion en deux étapes est activée. Il reste {count} codes de récupération."}
+    on: {one: "La double authentification est activée. Il reste {count} code de récupération.", other: "La double authentification est activée. Il reste {count} codes de récupération."}
     codes: "Vos codes de récupération (gardez-les en lieu sûr : chacun permet de se connecter une fois sans l'application ; ils ne seront plus affichés) :"
     new_codes: "Nouveaux codes de récupération"
     disable: "Désactiver"
   tokens:
     title: "Jetons d'API"
+    intro: "Les programmes qui utilisent l'API envoient un jeton dans l'en-tête Authorization de leurs requêtes : Bearer, puis le jeton."
     new: "Votre nouveau jeton (copiez-le maintenant, il ne sera plus affiché) :"
     revoke: "Révoquer"
     name: "Nom"
     create: "Créer un jeton"
   social:
-    sign_in_with: "Se connecter avec {provider}"
+    or: "Ou"
+    login_with: "Se connecter avec {provider}"
   errors:
     name_required: "Le champ nom est obligatoire."
     email_taken: "Cette adresse e-mail est déjà utilisée."
@@ -97,9 +100,9 @@ auth:
     social_other_account: "Le compte associé à cette adresse e-mail se connecte avec un autre compte sur ce service."
     code: "Ce code n'est pas correct."
     password: "Ce n'est pas votre mot de passe."
-    sign_in_again: "Veuillez vous reconnecter."
+    login_again: "Veuillez vous reconnecter."
     email_same: "C'est déjà votre adresse."
-    sign_in_first: "Déconnectez-vous et reconnectez-vous, puis définissez votre mot de passe dans les minutes qui suivent."
+    login_first: "Déconnectez-vous et reconnectez-vous, puis définissez votre mot de passe dans les minutes qui suivent."
     password_too_long: "Ce mot de passe est trop long."
     choice: "Choisissez une valeur de la liste."
     revert_invalid: "Ce lien ne permet d'annuler aucun changement d'adresse e-mail."
@@ -110,8 +113,8 @@ auth:
     reset_sent: "Si cette adresse correspond à un compte, nous lui avons envoyé un lien."
     password_reset: "Votre mot de passe a été réinitialisé. Vous pouvez vous connecter."
     token_revoked: "Jeton révoqué."
-    two_factor_on: "La connexion en deux étapes est activée."
-    two_factor_off: "La connexion en deux étapes est désactivée."
+    two_factor_on: "La double authentification est activée."
+    two_factor_off: "La double authentification est désactivée."
     saved: "Enregistré."
     email_change_sent: "Nous avons envoyé un lien à {email}. Votre adresse changera une fois le lien suivi."
     email_changed: "Votre adresse e-mail est désormais {email}."
