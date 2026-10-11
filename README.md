@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/anetos-logo-dark.svg">
-    <img alt="Anetos" src=".github/assets/anetos-logo.svg" width="240">
-  </picture>
+  <img alt="Anetos" src=".github/assets/anetos-logo-neutral.svg" width="240">
 </p>
 
 # Anetos locales
