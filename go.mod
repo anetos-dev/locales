@@ -2,10 +2,10 @@ module anetos.dev/locales
 
 go 1.26.0
 
-require anetos.dev/anetos v0.5.0-rc.1
+require anetos.dev/anetos v0.5.0
 
 require (
-	anetos.dev/anetos/cli v0.5.0-rc.1 // indirect
+	anetos.dev/anetos/cli v0.5.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	golang.org/x/mod v0.41.0 // indirect
 	golang.org/x/sync v0.23.0 // indirect

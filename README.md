@@ -68,9 +68,9 @@ the language uses; date patterns and names follow the language's
 Everyone taking part follows the
 [code of conduct](https://github.com/anetos-dev/.github/blob/main/CODE_OF_CONDUCT.md).
 
-Until the framework's modules are published (v0.5), the check needs a
-checkout of [anetos-dev/anetos](https://github.com/anetos-dev/anetos)
-next to this one (`../anetos`, see `go.mod`).
+The check builds against a checkout of
+[anetos-dev/anetos](https://github.com/anetos-dev/anetos) next to this
+one (`../anetos`, the `replace` in `go.mod`).
 
 ## License
 
